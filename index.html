@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Aplicaciones - Reporte de Calidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .category-header {
+            background-color: #2c3e50 !important;
+            color: white !important;
+            font-weight: bold;
+        }
+        
+        .resultado-excelente {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+        
+        .resultado-bueno {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            font-weight: bold;
+        }
+        
+        .resultado-regular {
+            background-color: #fff3cd;
+            color: #856404;
+            font-weight: bold;
+        }
+        
+        .resultado-deficiente {
+            background-color: #f8d7da;
+            color: #721c24;
+            font-weight: bold;
+        }
+        
+        .summary-table {
+            margin-top: 40px;
+        }
+        
+        .summary-table th {
+            background-color: #2c3e50;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .summary-table td {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evaluación de Aplicaciones - Reporte de Calidad</h1>
+    
+    <h2>1. BlueGestión - <span style="color: #27ae60; font-weight: bold;">NOTA FINAL: 5/5 ⭐⭐⭐⭐⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se evidencia que todos los requerimientos inscritos en el Excel fueron probados y funcionaron sin problemas</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Todas las funciones se probaron (RQF) y no se evidenciaron incidencias</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-excelente">Excelente</td>
+                <td>Solo se evalúan los RQF, sin embargo hay una funcionalidad que debe tener como advertencia</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se probó la aplicación durante un día en diferentes horas y funcionó sin problemas</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-excelente">0%</td>
+                <td>No se detectaron fallos mientras se usaba</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-excelente">100%</td>
+                <td>No se detectaron fallos en la aplicación</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-excelente"><strong>99%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Los (RQF) están bien, no se evidencian bloqueantes</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Es intuitiva, amigable con el usuario</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-regular">50%</td>
+                <td>No se evidencian errores ni falencias al momento de navegar</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-regular"><strong>Aceptable</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-regular">Aceptable</td>
+                <td>150.43 segundos / 80 interacciones = 1.880 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Enlace a Google Drive proporcionado</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Se probó en diferentes navegadores y funciona correctamente</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>No hubo inconvenientes en la navegación en los navegadores y dispositivos</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Permite ingresar de una sola manera manualmente</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Al digitar la contraseña se cambia por puntos, sin embargo no se puede evidenciar la confidencialidad</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>2. FreshlyGo - <span style="color: #e74c3c; font-weight: bold;">NOTA FINAL: 1/5 ⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-deficiente"><strong>40%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-deficiente">40%</td>
+                <td>No todos los requisitos funcionales están implementados</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-deficiente">40%</td>
+                <td>Todas las funciones se probaron y se evidenciaron errores y falta de información</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-deficiente">40%</td>
+                <td>Sí hay funciones que están orientadas al usuario, sin embargo no son funcionales en este momento</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-deficiente"><strong>30%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-deficiente">30%</td>
+                <td>Se probó la aplicación durante un día y dejó de funcionar</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-regular">70%</td>
+                <td>Sí tiene algunos fallos al crear los alimentos, no deja crearlos (es un bloqueante), no encuentra perfiles</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-regular">70%</td>
+                <td>Sí tiene algunos fallos al crear los alimentos, no deja crearlos (es un bloqueante), no encuentra perfiles</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No es fácil de manejar, faltan más módulos para guiarse</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se me hace difícil de usar, me costó mucho crear un producto</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Hay errores que no se visualizan bien, no es fácil saber si está seleccionando dónde va a escribir</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>60 segundos / 50 interacciones = 1.2 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Tamaño de app: 422MB</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Permite ingresar de una sola manera manualmente</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td>Al digitar la contraseña se cambia por puntos, sin embargo no se puede evidenciar la confidencialidad</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se evidencian varios módulos, sin embargo no todos son funcionales</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td>Se evidencian las pruebas no satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td>No hubo errores al instalar pero sí al ingresar después de probar, no abrió más</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>3. Mi Kaza - <span style="color: #3498db; font-weight: bold;">NOTA FINAL: 4/5 ⭐⭐⭐⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se evidencia que todos los requerimientos inscritos en el Excel fueron probados y funcionaron sin problemas</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Todas las funciones se probaron (RQF) y no se evidenciaron incidencias</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Solo se evalúan los RQF, sin embargo hay unas funcionalidades que no están funcionando</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se probó la aplicación durante un día en diferentes horas y funcionó sin problemas</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-excelente">0%</td>
+                <td>No se detectaron fallos mientras se usaba</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-regular">50%</td>
+                <td>No hay validaciones en el ingreso del huésped, se elimina el usuario de anfitrión</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-regular"><strong>60%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-regular">60%</td>
+                <td>Los (RQF) están bien, pero hay funcionalidades que son bloqueantes para el usuario final</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Es intuitiva, amigable con el usuario</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-regular">50%</td>
+                <td>Se evidencian falencias al momento de realizar registros e ingresos y ciertas funcionalidades no sirven</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-regular">Regular</td>
+                <td>130.71 segundos / 70 interacciones = 1.867 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Enlace a Google Drive proporcionado</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Se probó en diferentes navegadores y funciona correctamente</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>No hubo inconvenientes en la navegación en los navegadores y dispositivos</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Login de Huésped no valida las contraseñas</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Al digitar la contraseña se cambia por puntos, sin embargo no se puede evidenciar la confidencialidad</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Estable</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>4. Porteriapp  - <span style="color: #3498db; font-weight: bold;">NOTA FINAL: 3/5 ⭐⭐⭐⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se evidencia que todos los requerimientos inscritos en el Excel fueron probados y funcionaron sin problemas</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Todas las funciones se probaron y no se evidenciaron incidencias</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Sí, facilita el registro de las personas al momento de entrar a un conjunto</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se probó la aplicación durante un día en diferentes horas y funcionó sin problemas</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-bueno">80%</td>
+                <td>No hay validaciones en las placas de los vehículos, en el registro de residentes, ni en visitantes</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-bueno">80%</td>
+                <td>No hay validaciones en las placas de los vehículos, en el registro de residentes, ni en visitantes</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Funciona teniendo claro los parámetros para llenar cada campo</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-excelente">Excelente</td>
+                <td>Es muy fácil aprender a usarla e intuitiva</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian falencias al momento de realizar registros ya que no valida los campos</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-regular">Regular</td>
+                <td>120 segundos / 25 interacciones = 4.8 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Enlace a Google Drive proporcionado</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se probó en diferentes navegadores y funciona correctamente</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>No hubo inconvenientes en la navegación en los navegadores y dispositivos</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-deficiente"><strong>Deficiente</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td>Permite ver todos los datos de todos los residentes, debería mantenerlos privados</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Estable</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+    <h2>5. SinBog - <span style="color: #3498db; font-weight: bold;">NOTA FINAL: 4/5 ⭐⭐⭐⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se evidencia que todos los requerimientos inscritos en el Excel fueron probados y funcionaron sin problemas</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Todas las funciones se probaron y no se evidenciaron incidencias</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-regular">50%</td>
+                <td>Se entiende a qué va el uso del producto, sin embargo hay funciones que no son directas como la de llamar al 123, además no coincide la aplicación con el problema que resuelve</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se probó la aplicación durante un día en diferentes horas y funcionó sin problemas</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-excelente">0%</td>
+                <td>No se detectaron fallos mientras se usaba</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-regular">70%</td>
+                <td>No hay validaciones en los nombres cuando uno se registra, ni en el correo que exista, en este caso si uno quiere recuperar la contraseña no se puede</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Funciona perfectamente para realizar el informe y llamar a la aseguradora pero para llamar al 123 no es muy eficiente</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-excelente">Excelente</td>
+                <td>Es muy fácil aprender a usarla e intuitiva</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian falencias al momento de realizar registros ya que no valida si existe el correo y si los nombres tienen números</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-regular">Regular</td>
+                <td>34.71 segundos / 15 interacciones = 2.314 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Tamaño de app: 83.40MB, WiFi - Primer plano: 161KB, Segundo plano: 64.66 KB</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Permite ingresar por dos formas: registrarse manualmente o por Gmail directamente</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Al digitar la contraseña se cambia por puntos, sin embargo no se puede evidenciar la confidencialidad</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Estable</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>6. SuNi Bike App - <span style="color: #f39c12; font-weight: bold;">NOTA FINAL: 4/5 ⭐⭐⭐</span></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requisito</th>
+                <th>Resultado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header">
+                <td><strong>Adecuación Funcional</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Completitud funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se evidencia que todos los requerimientos inscritos en el Excel fueron probados y funcionaron sin problemas</td>
+            </tr>
+            <tr>
+                <td>Corrección funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Todas las funciones se probaron y no se evidenciaron incidencias</td>
+            </tr>
+            <tr>
+                <td>Pertinencia funcional</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se necesita tener un sistema que le ayude a gestionar los mantenimientos de las motos, por ende sí son relevantes las funciones</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Fiabilidad</strong></td>
+                <td class="resultado-excelente"><strong>100%</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Disponibilidad</td>
+                <td class="resultado-excelente">100%</td>
+                <td>Se probó la aplicación durante un día en diferentes horas y funcionó sin problemas</td>
+            </tr>
+            <tr>
+                <td>Madurez</td>
+                <td class="resultado-regular">2%</td>
+                <td>Sí tiene algunos fallos de validación de placa</td>
+            </tr>
+            <tr>
+                <td>Tolerancia a fallos</td>
+                <td class="resultado-regular">70%</td>
+                <td>No hay validaciones en las placas, y al cambiar de pestaña no es tan sencillo</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Usabilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Usabilidad con usuarios finales</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se siente un poco confusa y con varias mejoras</td>
+            </tr>
+            <tr>
+                <td>Facilidad de aprendizaje y operación</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se me hace difícil de usar, me costó mucho crear un usuario y registrar una moto</td>
+            </tr>
+            <tr>
+                <td>Protección contra errores de usuario y accesibilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Hay errores que no se visualizan bien, no es fácil saber si está seleccionando dónde va a escribir</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Eficiencia</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tiempos de respuesta</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>60 segundos / 50 interacciones = 1.2 segundos por interacción</td>
+            </tr>
+            <tr>
+                <td>Consumo de recursos</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Tamaño de app: 56.20MB, WiFi - Primer plano: 161KB, Segundo plano: 64.66 KB</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Compatibilidad</strong></td>
+                <td class="resultado-regular"><strong>Regular</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coexistencia</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr>
+                <td>Interoperabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Mala ya que iOS no permite instalar apps por fuera de su tienda</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Seguridad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Autenticación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Permite ingresar de una sola manera manualmente</td>
+            </tr>
+            <tr>
+                <td>Confidencialidad de los datos</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Al digitar la contraseña se cambia por puntos, sin embargo no se puede evidenciar la confidencialidad</td>
+            </tr>
+            <tr>
+                <td>Responsabilidad</td>
+                <td class="resultado-regular">Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-regular">Regular</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Resumen Comparativo con Notas Finales</h2>
+    
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th>Aplicación</th>
+                <th>Nota Final</th>
+                <th>Adecuación Funcional</th>
+                <th>Fiabilidad</th>
+                <th>Usabilidad</th>
+                <th>Eficiencia</th>
+                <th>Compatibilidad</th>
+                <th>Seguridad</th>
+                <th>Mantenibilidad</th>
+                <th>Portabilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>BlueGestión</strong></td>
+                <td style="color: #27ae60; font-weight: bold; font-size: 18px;">5/5 ⭐⭐⭐⭐⭐</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">99%</td>
+                <td class="resultado-regular">Aceptable</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Bueno</td>
+            </tr>
+            <tr>
+                <td><strong>Mi Kaza</strong></td>
+                <td style="color: #3498db; font-weight: bold; font-size: 18px;">4/5 ⭐⭐⭐⭐</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-regular">60%</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Bueno</td>
+            </tr>
+            <tr>
+                <td><strong>SinBog</strong></td>
+                <td style="color: #3498db; font-weight: bold; font-size: 18px;">4/5 ⭐⭐⭐⭐</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Buena</td>
+            </tr>
+            <tr>
+                <td><strong>Porteriapp</strong></td>
+                <td style="color: #f39c12; font-weight: bold; font-size: 18px;">3/5 ⭐⭐⭐</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-deficiente">Deficiente</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Buena</td>
+            </tr>
+            <tr>
+                <td><strong>SuNi Bike App</strong></td>
+                <td style="color: #f39c12; font-weight: bold; font-size: 18px;">3/5 ⭐⭐⭐</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-excelente">100%</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-bueno">Buena</td>
+            </tr>
+            <tr>
+                <td><strong>FreshlyGo</strong></td>
+                <td style="color: #e74c3c; font-weight: bold; font-size: 18px;">1/5 ⭐</td>
+                <td class="resultado-deficiente">40%</td>
+                <td class="resultado-deficiente">30%</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+                <td class="resultado-regular">Regular</td>
+                <td class="resultado-bueno">Buena</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 8px;">
+        <h3 style="color: #2c3e50;">📊 Análisis de Resultados por Categorías</h3>
+        
+        <div style="margin: 15px 0;">
+            <h4 style="color: #27ae60;">🏆 Excelencia (5/5):</h4>
+            <p><strong>BlueGestión</strong> - Líder indiscutible con funcionalidad completa, alta fiabilidad y excelente usabilidad. Ideal para gestión empresarial.</p>
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <h4 style="color: #3498db;">⭐ Muy Bueno (4/5):</h4>
+            <p><strong>Mi Kaza</strong> - Sólida funcionalidad con algunas mejoras necesarias en usabilidad.</p>
+            <p><strong>SinBog</strong> - Buena aplicación para seguros con interfaz intuitiva pero compatibilidad limitada.</p>
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <h4 style="color: #f39c12;">✅ Aceptable (3/5):</h4>
+            <p><strong>Porteriapp</strong> - Funcional pero con serios problemas de seguridad que requieren atención inmediata.</p>
+            <p><strong>SuNi Bike App</strong> - Cumple su propósito básico pero necesita mejoras en experiencia de usuario.</p>
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <h4 style="color: #e74c3c;">❌ Necesita Mejoras Urgentes (1/5):</h4>
+            <p><strong>FreshlyGo</strong> - Múltiples problemas críticos en funcionalidad y fiabilidad. Requiere desarrollo adicional significativo.</p>
+        </div>
+    </div>
+
+</body>
+</html>Regular</td>
+                <td>No se puede validar muy bien, sin embargo sí se registran las personas que deseen</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Mantenibilidad</strong></td>
+                <td class="resultado-bueno"><strong>Buena</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td class="resultado-bueno">Buena</td>
+                <td>Se evidencian varios módulos con funcionamiento correcto</td>
+            </tr>
+            <tr>
+                <td>Facilidad de análisis</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Es estable la aplicación al realizar las consultas a los diferentes módulos</td>
+            </tr>
+            <tr>
+                <td>Capacidad de prueba</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Se evidencian las pruebas satisfactorias</td>
+            </tr>
+            <tr class="category-header">
+                <td><strong>Portabilidad</strong></td>
+                <td class="resultado-bueno"><strong>Bueno</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instalación</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>Fácil, no hubo problemas</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad</td>
+                <td class="resultado-bueno">Bueno</td>
+                <td>No hubo errores al instalar</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
